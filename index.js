@@ -10,8 +10,9 @@ app.use(bodyParser.urlencoded ({extended: true}));
 app.get("/" , (req,res) => {
    res.render("home.ejs");
 });
-app.get("/about" , (req,res) => {
-    
+
+app.get("/create" , (req,res) => {
+    res.render("Create.ejs");
 });
 
 
